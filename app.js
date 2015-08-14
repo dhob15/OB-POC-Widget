@@ -61,6 +61,10 @@ app.get('/', function(request, response, next) {
     response.render('index');
 });
 
+app.get('/results', function(request, response) {
+    response.render('results', { layout: 'popup' });
+});
+
 
 /*
  * Start it up
